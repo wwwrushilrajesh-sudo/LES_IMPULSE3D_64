@@ -1,0 +1,4 @@
+numpy
+matplotlib
+# optional: Q-criterion images
+# pyvista

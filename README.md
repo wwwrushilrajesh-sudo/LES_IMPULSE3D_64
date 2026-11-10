@@ -25,9 +25,4 @@ uniform grid, walls on all six sides, regularised or uniform lid, adaptive or fi
 mid-span mean/RMS statistics, probes. Not included: LES, the wall model, the other advection schemes, periodic z,
 2-D runs and the energy budget. `main.py` stops with a message if one of those is switched on.
 
-## Status
 
-Tested here with a CPU build of `backend.cu` against your original Python solver (same settings and noise):
-fields agree to about 3e-6 after 60 steps and 1.4e-5 after 300 (single vs. double precision), for the default
-settings, 2nd-order impulse, uniform lid, uniform grid, fixed dt, CFL-limited dt, no warm start, and statistics
-with kicks and probes. Not yet compiled with nvcc or run on a GPU; the Q image (PyVista) is untested.
